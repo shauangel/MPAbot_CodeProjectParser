@@ -1,8 +1,8 @@
 swagger: "2.0"
 info:
-  description: "This is a web parsing service designed for Reddit."
+  description: "This is a web parsing service designed for CodeProject."
   version: "1.0.0"
-  title: "Reddit Parser"
+  title: "CodeProject Parser"
 tags:
 - name: "RESTful API"
 paths:
@@ -10,7 +10,7 @@ paths:
     post:
       tags:
         - "RESTful API"
-      summary: "Ask for related Reddit website"
+      summary: "Ask for related CodeProject website"
       description: "Search related information from Google search engine. Response url list."
       operationId: "searchRedditURL"
       consumes: "application/json"
@@ -18,7 +18,7 @@ paths:
       parameters:
         - in: "body"
           name: "body"
-          description: "Search for related Reddit comments"
+          description: "Search for related CodeProject comments"
           required: true
           schema:
             $ref: "#/definitions/SearchRequest"
